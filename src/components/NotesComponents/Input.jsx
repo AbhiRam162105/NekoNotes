@@ -2,6 +2,7 @@
 // import React, { useState } from 'react';
 import "../CSS/Input.css";
 import TipTap from "../TipTap/Tiptap";
+import TipTapWithLogger from "./TipTap";
 
 
 function Input() {
@@ -25,7 +26,7 @@ function Input() {
             {/*    />*/}
             {/*</div>*/}
             <div className='tiptap-container'>
-             <TipTap/>
+                <TipTapWithLogger />
             </div>
         </div>
     );
