@@ -12,6 +12,9 @@ function NotesSideBar() {
       { id: notes.length + 1, title: `Note ${notes.length + 1}` },
     ];
     setNotes(newNotes);
+
+    // Open a new tab with the same window content
+    window.open(window.location.href, "_blank");
   };
 
   return (
@@ -19,13 +22,9 @@ function NotesSideBar() {
       <div className="sideBar-warapper">
         <div className="note-btns">
           <button className="newNote" onClick={addNote}>
-            New Note +
+            +
           </button>
         </div>
-
-        {notes.map((note) => (
-          <NotesTitle key={note.id} title={note.title} />
-        ))}
       </div>
     </>
   );

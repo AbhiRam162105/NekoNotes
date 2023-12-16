@@ -2,12 +2,13 @@
 
 .App {
   margin-top: 27px auto;
+  margin-left: 10px;
   font-family: Poppins, sans-serif;
   background: white;
 }
 
 .App {
-  min-width: 800px;
+  min-width: 1000px;
 }
 
 .menuBar {

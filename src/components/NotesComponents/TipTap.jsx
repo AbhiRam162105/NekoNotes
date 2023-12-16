@@ -16,6 +16,7 @@ import {
 import Select from "react-select"; // Import react-select
 import "../CSS/Tiptap.css";
 import Loader from "./Loader";
+import NotesTitle from "./NotesTitle";
 
 const PlainTextLogger = () => {
   return {
