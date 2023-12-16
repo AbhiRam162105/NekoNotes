@@ -10,7 +10,7 @@ function NotesTitle() {
   return (
     <div className='notesTitle-wrapper'>
       <button className="notesTitle">
-        Notes 1
+        Notes
       </button>
     </div>
   )
