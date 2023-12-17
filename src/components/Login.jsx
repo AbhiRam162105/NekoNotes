@@ -3,11 +3,12 @@ import { useToasts } from "react-toast-notifications";
 import "./CSS/Login.css";
 import LoginImg from "./Assets/login.svg";
 import SignupImg from "./Assets/notetaking.svg";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [selectedForm, setSelectedForm] = useState("signup");
   const { addToast } = useToasts();
-
+  const navigate = useNavigate();
   const handleSwitchClick = (e) => {
     setSelectedForm(e.target.textContent.toLowerCase());
   };
@@ -38,7 +39,8 @@ function Login() {
 
       if (response.ok) {
         // Successful login/signup
-        addToast(result.message, { appearance: "success" });
+        addToast("successfull", { appearance: "success" });
+        navigate("/notes");
       } else {
         // Display error using toast
         addToast(result.error, { appearance: "error" });
