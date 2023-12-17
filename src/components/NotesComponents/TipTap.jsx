@@ -379,6 +379,7 @@ const TipTapWithLogger = () => {
   useEffect(() => {
     console.log(stripHtmlTags(description));
     postNoteApi(stripHtmlTags(description));
+    console.log("successful");
   }, [description]);
 
   return (

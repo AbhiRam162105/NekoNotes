@@ -29,8 +29,9 @@ const Chatbot = () => {
 
       if (response.ok) {
         const data = await response.json();
-        console.log(data.notes[0].text);
+        console.log("Plain Text ----- ", data.notes[0].text);
         setPlainText(data.notes[0].text);
+        askQuestion();
       } else {
         console.error("Error fetching note text:", response.statusText);
       }
@@ -40,7 +41,6 @@ const Chatbot = () => {
   };
 
   const askQuestion = async () => {
-    fetchNoteText();
     if (!question.trim()) return;
 
     setLoading(true);
@@ -84,14 +84,6 @@ const Chatbot = () => {
   return (
     <div className="custom-flex custom-fill-viewport">
       <div className="custom-chatbot-container">
-        {answer && (
-          <div className="custom-chatbot-answer">
-            <h3 className="custom-text-xl custom-font-bold custom-mb-2">
-              Answer:
-            </h3>
-            <p>{answer}</p>
-          </div>
-        )}
         <div className="custom-chatbot-interaction">
           <div className="custom-chatbot-question">
             <input
@@ -102,7 +94,7 @@ const Chatbot = () => {
               className="custom-border custom-rounded-md custom-p-2 custom-mr-2 custom-flex-grow"
             />
             <button
-              onClick={askQuestion}
+              onClick={fetchNoteText}
               disabled={loading}
               className="custom-bg-blue-800 custom-text-white custom-px-4 custom-py-2 custom-rounded-md custom-submit-button"
             >
@@ -110,6 +102,14 @@ const Chatbot = () => {
             </button>
           </div>
         </div>
+        {answer && (
+          <div className="custom-chatbot-answer">
+            <h3 className="custom-text-xl custom-font-bold custom-mb-2">
+              Answer:
+            </h3>
+            <p>{answer}</p>
+          </div>
+        )}
       </div>
     </div>
   );
