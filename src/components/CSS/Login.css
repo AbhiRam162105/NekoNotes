@@ -22,9 +22,19 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  /* background-color: yellowgreen; */
 }
 
-.account-warpper input {
+.account-info form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.account-info input {
+  /* background-color: yellowgreen; */
   height: 40px;
   width: 300px;
   text-align: center;
@@ -32,7 +42,7 @@
   border-radius: 10px;
 }
 
-.account-warpper button {
+.account-info button {
   margin: 0 auto;
   height: 40px;
   width: 150px;
