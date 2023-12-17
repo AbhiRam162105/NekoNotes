@@ -16,7 +16,7 @@ import {
 import Select from "react-select"; // Import react-select
 import "../CSS/Tiptap.css";
 import Loader from "./Loader";
-import NotesTitle from "./NotesTitle";
+import html2pdf from "html2pdf.js";
 
 const PlainTextLogger = () => {
   return {
@@ -132,6 +132,16 @@ const MenuBar = ({
   if (!editor) {
     return null;
   }
+  const handleDownloadTxt = () => {
+    const content = editor.getHTML();
+
+    html2pdf(content, {
+      margin: 10,
+      filename: "editor_content.pdf",
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    });
+  };
 
   const handleToggleBold = () => {
     editor.chain().focus().toggleBold().run();
@@ -213,6 +223,21 @@ const MenuBar = ({
         </button>
         <button onClick={() => editor.chain().focus().redo().run()}>
           <FaRedo />
+        </button>
+        <button
+          onClick={handleDownloadTxt}
+          style={{
+            padding: "5px 10px",
+            fontSize: "16px",
+            backgroundColor: "Black",
+            color: "rgb(255,255,255)",
+            border: "1px solid black",
+            borderRadius: "4px",
+            cursor: "pointer",
+            marginRight: "10px", // Adjust spacing
+          }}
+        >
+          Download
         </button>
       </div>
     </div>

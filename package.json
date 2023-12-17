@@ -16,6 +16,7 @@
     "@tiptap/react": "^2.1.13",
     "@tiptap/starter-kit": "^2.1.13",
     "html-react-parser": "^5.0.7",
+    "html2pdf.js": "^0.10.1",
     "lucide-react": "^0.295.0",
     "mammoth": "^1.6.0",
     "pdfjs-dist": "^4.0.269",

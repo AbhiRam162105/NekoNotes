@@ -8,7 +8,7 @@
 }
 
 .App {
-  width: 750px;
+  width: 1080px;
 }
 
 .menuBar {
@@ -34,7 +34,7 @@
   outline: 0px solid aqua;
 }
 
-.ProseMirror>*+* {
+.ProseMirror > * + * {
   margin-top: 0.75em;
 }
 
