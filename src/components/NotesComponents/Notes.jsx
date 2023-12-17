@@ -12,9 +12,9 @@ function Notes() {
         <Input />
         <AiText />
       </div>
-      <div className="left">
+      {/* <div className="left">
         <NotesSideBar />
-      </div>
+      </div> */}
     </div>
   );
 }

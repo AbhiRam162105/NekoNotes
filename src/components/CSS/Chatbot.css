@@ -1,22 +1,26 @@
 .custom-flex {
-  margin-top: 27px;
+  /* margin-top: 27px; */
   margin-left: 10px;
   display: flex;
 }
 
 .custom-chatbot-container {
-  background-color: #fffefe; /* Set your desired background color */
+  background-color: #fffefe;
+  /* Set your desired background color */
   border-radius: 8px;
   border: 1px solid #1d1d1d;
   width: 100%;
-  max-width: 400px; /* Adjust the maximum width as needed */
+  max-width: 400px;
+  /* Adjust the maximum width as needed */
   height: 50vh;
-  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  overflow-y: auto;
+  /* Add vertical scrollbar if content exceeds container height */
 }
 
 .custom-chatbot-interaction {
   margin-top: 16px;
-  height: 90%; /* Occupy full height within the container */
+  height: 90%;
+  /* Occupy full height within the container */
 }
 
 .custom-chatbot-answer {
@@ -38,7 +42,7 @@
 .custom-chatbot-question {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .custom-border {
@@ -62,12 +66,15 @@
 }
 
 .custom-bg-blue-800 {
-  background-color: #0066cc; /* Set your desired background color */
-  color: #fff; /* Set your desired text color */
+  background-color: #0066cc;
+  /* Set your desired background color */
+  color: #fff;
+  /* Set your desired text color */
 }
 
 .custom-text-white {
-  color: #fff; /* Set your desired text color */
+  color: #fff;
+  /* Set your desired text color */
 }
 
 .custom-px-4 {
@@ -82,26 +89,33 @@
 
 .custom-submit-button {
   /* Add styling for the submit button size */
-  padding: 10px 20px; /* Adjust the padding for your desired size */
-  font-size: 16px; /* Adjust the font size for your desired size */
+  padding: 10px 20px;
+  /* Adjust the padding for your desired size */
+  font-size: 16px;
+  /* Adjust the font size for your desired size */
   border: none;
   cursor: pointer;
 
   border-radius: 4px;
-  background-color: #0066cc; /* Set your desired background color */
-  color: #fff; /* Set your desired text color */
+  background-color: #0066cc;
+  /* Set your desired background color */
+  color: #fff;
+  /* Set your desired text color */
 }
 
 .custom-submit-button:disabled {
   min-width: 20px;
-  background-color: #ccc; /* Set your desired background color for disabled state */
-  color: #999; /* Set your desired text color for disabled state */
+  background-color: #ccc;
+  /* Set your desired background color for disabled state */
+  color: #999;
+  /* Set your desired text color for disabled state */
   cursor: not-allowed;
 }
+
 /* Chatbot.css */
 
 .custom-flex {
-  margin-top: 27px;
+  /* margin-top: 27px; */
   margin-left: 10px;
   display: flex;
   flex-direction: column;
@@ -117,7 +131,7 @@
   border: 1px solid #1d1d1d;
   width: 100%;
   max-width: 400px;
-  height: 50vh;
+  height: 81vh;
   overflow-y: auto;
 }
 
