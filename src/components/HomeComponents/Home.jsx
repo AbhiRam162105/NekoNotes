@@ -3,9 +3,9 @@ import "../CSS/Home.css"
 import heroImage from "../Assets/Logo.svg"
 import FeaturesCard from './FeaturesCard'
 
-import Notetaking from "../Assets/notetaking.svg"
-import Speech from "../Assets/speech.svg"
-import Secure from "../Assets/lock.svg"
+import Summary from "../Assets/summary.svg"
+import Translate from "../Assets/translate.svg"
+import Chat from "../Assets/chat.svg"
 import Team from "../Assets/team.svg"
 
 function Home() {
@@ -36,9 +36,9 @@ function Home() {
       <div className="features">
         <h2 className="features-why"> Why use NekoNotes ? </h2>
         <div className="features-cards">
-          <FeaturesCard img={Notetaking} title={"Easy Notetaking"} />
-          <FeaturesCard img={Speech} title={"Text To Speech"} />
-          <FeaturesCard img={Secure} title={"Secure Notes"} />
+          <FeaturesCard img={Summary} title={"Easily Summarise Your notes"} />
+          <FeaturesCard img={Translate} title={"Translate your notes to other languages"} />
+          <FeaturesCard img={Chat} title={"Get your questions answered using an AI Chat Box"} />
         </div>
       </div>
 
