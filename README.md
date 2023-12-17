@@ -1,6 +1,14 @@
 # Neko Notes 📝
 
-Welcome to Neko Notes, where note-taking meets magic! 🚀
+<img width="1440" alt="Screenshot 2023-12-17 at 7 39 55 PM" src="https://github.com/AbhiRam162105/NekoFrontend/assets/112550626/626da792-d8a1-4890-ad1d-cb2f3a4ce748">
+
+<img width="1440" alt="Screenshot 2023-12-17 at 7 40 25 PM" src="https://github.com/AbhiRam162105/NekoFrontend/assets/112550626/34115283-0ab3-48f4-b44b-95069b634091">
+
+<img width="1440" alt="Screenshot 2023-12-17 at 7 40 48 PM" src="https://github.com/AbhiRam162105/NekoFrontend/assets/112550626/3150711e-d6d8-425a-800e-2bd5dde46d81">
+
+<img width="1440" alt="Screenshot 2023-12-17 at 7 41 41 PM" src="https://github.com/AbhiRam162105/NekoFrontend/assets/112550626/109918af-2259-4791-a33a-c425c9b3e103">
+
+#Welcome to Neko Notes, where note-taking meets magic! 🚀
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -34,7 +42,7 @@ Need a quick refresher? Ask questions related to your notes, and our AI will pro
 - **Flask and Go**: Powering the robust back-end infrastructure.
 - **HTML and CSS**: Crafting the beautiful UI.
 - **TailwindCSS**: Adding a dash of style for that modern look.
-- **MongoDB**: Adding a dash of style for that modern look.
+- **MongoDB**: For storing the data dynamically.
 
 ## Getting Started
 
